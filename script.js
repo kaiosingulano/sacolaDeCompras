@@ -174,11 +174,6 @@ const editarItem = (elemento) => {
     if (atualizarItem !== null && atualizarItem.trim() !== "") {
         let nomeItem = elemento.querySelector('#item-nome')
         nomeItem.textContent = atualizarItem;
-
-        let itemData = document.querySelector('.produto-data');
-        itemData.innerHTML = `${new Date().toLocaleDateString('pt-BR', {weekday: 'long'})}
-        (${new Date().toLocaleDateString()}) às ${new Date().toLocaleTimeString("pt-BR", {hour: "numeric", minute: "numeric"})}`;
-
     }
 }
 
