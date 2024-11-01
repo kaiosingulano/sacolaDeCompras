@@ -1,7 +1,8 @@
 Lista de Compras - Read.me
 
 Este repositório contém o código-fonte de uma aplicação web para gerenciar listas de compras.
-Funcionalidades
+
+Funcionalidades:
 
     Cadastro de itens para a lista de compras;
     Edição de itens já cadastrados;
@@ -33,7 +34,5 @@ Instruções de uso
     Clique no botão "Excluir" para remover um item da lista;
     Preencha os campos de quantidade e preço para um item da lista de compras e clique em "Comprar" para transferi-lo para a lista de comprados e calcular o subtotal;
     Clique em "Devolver" para retornar um item comprado para a lista de compras e recalcular o subtotal.
-
-Contribuindo
 
 Sinta-se à vontade para enviar pull requests para sugerir melhorias ou correções no código.
