@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Numans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lista de Compras</title>
+</head>
+
+<body>
+    <main class="container">
+        <h1 class="titulo">Sacola de Compras</h1>
+        <form class="formulario1">
+            <input type="text" placeholder="Digite o item que deseja adicionar" id="input-item">
+            <button id="salvar-item">Salvar Item</button>
+        </form>
+        <section class="compras">
+            <h2 class="compras-titulo">Lista a Comprar</h2>
+            <ul id="lista-produtos">
+               <p class="lista-vazia" id="mensagem-vazia" style="display: block">Sua lista está vazia. Adicione produtos através do botão Salvar Item. Após, informe quantidade e preço e clique no botão de Comprar para tranferí-los para a lista de Comprados.</p>
+            </ul>
+            <h2 class="compras-titulo" id="titulo-comprados">Comprados</h2>
+            <ul id="lista-comprados">              
+            </ul>
+            <p id="subtotal"></p>
+        </section>
+        <img src="./img/bag.svg" alt="Sacola de Compras" class="container-imagem">
+    </main>
+    
+    <script src="script.js"></script>
+</body>

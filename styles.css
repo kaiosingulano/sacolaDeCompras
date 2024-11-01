@@ -1,0 +1,196 @@
+:root {
+    --branco: #FFFFFF;
+    --cinza: #f9f9f9;
+    --cinza2: #8a8a8a;
+    --coral: #f55b64;
+    --ocre: #c2373f;
+    --marinho: #131730;
+    --azulclaro: #1582db;
+    --fonteTitulo: "Krona One", sans-serif;
+    --fonte: "Numans", sans-serif;
+    --fontep: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: var(--marinho);
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--fonte);
+    text-align: center;
+}
+
+.container {
+    background-color: var(--branco);
+    margin: 2em 1em;
+    border: 3px solid var(--azulclaro);
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    gap: 0.5em;
+}
+
+.titulo {
+    font-family: var(--fonteTitulo);
+    font-size: 1.5rem;
+    color: var(--azulclaro);
+    text-shadow: 2px 2px 1px var(--marinho);
+}
+
+.formulario1 {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    align-items: center;
+}
+
+#input-item {
+    width: 75vw;
+    text-align: center;
+    height: 2.5em;
+    border: 2px solid var(--azulclaro);
+    border-radius: 20px;
+}
+
+#input-item::placeholder {
+    font-family: var(--fontep);
+    color: var(--marinho);
+    font-size: 1rem;
+}
+
+#salvar-item {
+    color: var(--branco);
+    background-color: var(--azulclaro);
+    padding: 0.7em;
+    border-radius: 25px;
+    font-family: var(--fonte);
+    font-size: 18px;
+    box-shadow: 1px 1px 1px 1px black;
+    margin-top: 0.8em;
+    width: 40vw;
+}
+
+#salvar-item:hover {
+    background-color: var(--marinho);
+}
+
+.compras {
+    margin: 2em 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.compras-titulo {
+    font-family: var(--fonteTitulo);
+    color: var(--coral);
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 2px dotted var(--coral);
+    padding: 0.5em 0;
+    width: 100%;
+}
+
+#lista-produtos{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.container-produto {
+    display: flex;
+    flex-direction: column;
+}
+
+.nome-e-botoes {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.produto-nome {
+    flex: 8 1 auto;
+    text-align: start;
+}
+
+.botoes-editar {
+    border: none;
+    background-color: transparent;
+    width: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+.produto-data {
+    font-size: 10px;
+    margin: 1em 0;
+    text-align: start;
+}
+
+.produto-botoes {
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+}
+
+#quantidade {
+    width: 15vw;
+    border: 1px solid var(--coral);
+    border-radius: 15px;
+}
+
+#quantidade::placeholder {
+    font-family: var(--fontep);
+    text-align: center;
+}
+
+#preco {
+    width: 20vw;
+    border: 1px solid var(--coral);
+    border-radius: 15px;
+}
+
+#preco::placeholder {
+    font-family: var(--fontep);
+    text-align: center;
+}
+
+#add-comprados, #devolver {
+    color: var(--branco);
+    background-color: var(--coral);
+    border-radius: 15px;
+    font-family: var(--fonte);
+    font-size: 1rem;
+    box-shadow: 1px 1px 1px 1px black;
+    width: 25vw;
+    height: 1.5rem;
+}
+
+#add-comprados:hover, #devolver:hover {
+    background-color: var(--ocre);
+}
+
+.lista-vazia {
+    line-height: 1.2rem;
+}
+
+#titulo-comprados {
+    display: none;
+}
+
+#lista-comprados {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+#subtotal {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5rem;
+}
+
+.sumir-coisas {
+    display: none;
+}
