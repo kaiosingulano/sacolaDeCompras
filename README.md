@@ -13,19 +13,19 @@ Funcionalidades:
     Devolução de itens comprados para a lista de compras, atualizando o subtotal;
     Mensagem de aviso para lista vazia.
 
-Tecnologias utilizadas
+Tecnologias utilizadas:
 
     HTML: Linguagem de marcação para estrutura da página web;
     CSS: Linguagem de estilo para formatação visual da página;
     JavaScript: Linguagem de script para interatividade e lógica da aplicação.
 
-Técnicas
+Técnicas:
 
     DOM Manipulation: O JavaScript manipula o DOM (Document Object Model) para modificar o conteúdo da página dinamicamente, baseado nas ações do usuário.
     Event Listeners: A aplicação utiliza event listeners para capturar eventos do usuário, como cliques em botões, e executar ações correspondentes.
     Local Storage (opcional): A funcionalidade da aplicação poderia ser aprimorada utilizando Local Storage para persistir os dados da lista de compras e itens comprados entre recarregamentos da página.
 
-Instruções de uso
+Instruções de uso:
 
     Clone este repositório;
     Abra o arquivo index.html em um navegador web;
