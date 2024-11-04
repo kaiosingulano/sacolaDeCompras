@@ -189,6 +189,7 @@ body {
     font-weight: 600;
     font-size: 18px;
     line-height: 1.5rem;
+    display: inline-block;
 }
 
 .sumir-coisas {
