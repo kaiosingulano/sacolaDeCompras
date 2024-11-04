@@ -87,8 +87,8 @@ function addItem(evento) {
         const itemTitulo = evento.currentTarget.closest('li').querySelector('#item-nome');
              
 
-            if (listaComprados.querySelectorAll('span').length === 0) {
-                const subtotal = document.createElement('span');
+            if (listaComprados.querySelectorAll('title').length === 0) {
+                const subtotal = document.createElement('title');
                 subtotal.id = 'subtotal';
                 listaComprados.appendChild(subtotal);
             }
