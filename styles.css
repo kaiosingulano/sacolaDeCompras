@@ -93,6 +93,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.5em;
+    width: 80vw;
 }
 
 .container-produto {
@@ -175,6 +176,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.5em;
+    width: 80vw;
 }
 
 #subtotal {

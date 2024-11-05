@@ -154,6 +154,8 @@ const tituloComprados = document.getElementById('titulo-comprados');
 function verificarComprados() {
     if (listaComprados.childElementCount === 0) {
         tituloComprados.style.display = 'none';
+        const subtotal = document.getElementById('subtotal');
+        subtotal.innerHTML = "";
     } else {
         tituloComprados.style.display = 'block';
     }
