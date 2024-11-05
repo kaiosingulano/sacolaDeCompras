@@ -87,8 +87,8 @@ function addItem(evento) {
         const itemTitulo = evento.currentTarget.closest('li').querySelector('#item-nome');
              
 
-            if (listaComprados.querySelectorAll('title').length === 0) {
-                const subtotal = document.createElement('title');
+            if (listaComprados.querySelectorAll('#subtotal').length === 0) {
+                const subtotal = document.createElement('p');
                 subtotal.id = 'subtotal';
                 listaComprados.appendChild(subtotal);
             }
@@ -183,6 +183,5 @@ const excluirItem = (elemento) => {
     if (confirmacao) {
         elemento.remove();
         verificarListaVazia();
-        verificarComprados();
     }
 }

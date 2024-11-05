@@ -167,10 +167,6 @@ body {
     height: 1.5rem;
 }
 
-#add-comprados:hover, #devolver:hover {
-    background-color: var(--ocre);
-}
-
 .lista-vazia {
     line-height: 1.2rem;
 }
@@ -186,8 +182,7 @@ body {
 }
 
 #subtotal {
-    font-weight: 600;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.5rem;
     display: inline-block;
 }
