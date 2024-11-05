@@ -85,16 +85,11 @@ function addItem(evento) {
         const quantidade = evento.currentTarget.closest('li').querySelector("#quantidade");
         const preco = evento.currentTarget.closest('li').querySelector("#preco");
         const itemTitulo = evento.currentTarget.closest('li').querySelector('#item-nome');
-             
-
-            if (listaComprados.querySelectorAll('#subtotal').length === 0) {
-                const subtotal = document.createElement('p');
-                subtotal.id = 'subtotal';
-                listaComprados.appendChild(subtotal);
-            }
-            let subtotalProduto = Number(preco.value) * Number(quantidade.value);
-            subtotalValor += subtotalProduto;
-            subtotal.innerHTML = `Total - R$: ${subtotalValor.toFixed(2)}`;
+            
+        const subtotal = document.getElementById('subtotal');
+        let subtotalProduto = Number(preco.value) * Number(quantidade.value);
+        subtotalValor += subtotalProduto;
+        subtotal.innerHTML = `Total - R$: ${subtotalValor.toFixed(2)}`;
         
 
         itemTitulo.style.textDecoration = 'line-through';
@@ -161,11 +156,6 @@ function verificarComprados() {
         tituloComprados.style.display = 'none';
     } else {
         tituloComprados.style.display = 'block';
-    }
-    let subtotal = document.getElementById('subtotal');
-    if (listaComprados.childElementCount === 1 && listaComprados.contains(subtotal)){
-        subtotal.remove();
-        tituloComprados.style.display = 'none';
     }
 }
 

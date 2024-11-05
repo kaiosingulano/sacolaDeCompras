@@ -72,10 +72,6 @@ body {
     width: 40vw;
 }
 
-#salvar-item:hover {
-    background-color: var(--marinho);
-}
-
 .compras {
     margin: 2em 1.5em;
     display: flex;
